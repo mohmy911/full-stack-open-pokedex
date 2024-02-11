@@ -1,8 +1,9 @@
 name: Deployment pipeline
 on:
   push:
-    branches:
-      - main
+    branches: [master,main]
+  pull_request:
+    branches: [master,main]
 jobs:
   simple_deployment_pipeline:
     runs-on: ubuntu-20.04
